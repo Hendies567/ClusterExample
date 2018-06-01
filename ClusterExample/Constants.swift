@@ -58,3 +58,18 @@ func markerIcon(type: String) -> UIImage {
         return UIImage()
     }
 }
+
+extension GMSMapView {
+    func setStyle() {
+        do {
+            // Set the map style by passing the URL of the local file.
+            if let styleURL = Bundle.main.url(forResource: "GMapStyle", withExtension: "json") {
+                self.mapStyle = try GMSMapStyle(contentsOfFileURL: styleURL)
+            } else {
+                print("Unable to find style.json")
+            }
+        } catch {
+            print("One or more of the map styles failed to load. \(error)")
+        }
+    }
+}

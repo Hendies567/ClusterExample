@@ -38,6 +38,7 @@
 		75AD08F420C15B230063AE30 /* GMUGeoJSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AD08D520C15B230063AE30 /* GMUGeoJSONParser.m */; };
 		75AD08F520C15B230063AE30 /* GQTPointQuadTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AD08D820C15B230063AE30 /* GQTPointQuadTree.m */; };
 		75AD08F620C15B230063AE30 /* GQTPointQuadTreeChild.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AD08DA20C15B230063AE30 /* GQTPointQuadTreeChild.m */; };
+		75AD08F920C176060063AE30 /* GMapStyle.json in Resources */ = {isa = PBXBuildFile; fileRef = 75AD08F820C176050063AE30 /* GMapStyle.json */; };
 		AB5D94A820C1653C003A6A3F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5D94A720C1653C003A6A3F /* Constants.swift */; };
 		AB5D94AA20C16749003A6A3F /* ClusterItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5D94A920C16749003A6A3F /* ClusterItem.swift */; };
 /* End PBXBuildFile section */
@@ -115,6 +116,7 @@
 		75AD08DD20C15B230063AE30 /* GQTPointQuadTreeChild.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GQTPointQuadTreeChild.h; sourceTree = "<group>"; };
 		75AD08DE20C15B230063AE30 /* GQTBounds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GQTBounds.h; sourceTree = "<group>"; };
 		75AD08F720C15B6B0063AE30 /* ClusterExample-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ClusterExample-Bridging-Header.h"; path = "ClusterExample/ClusterExample-Bridging-Header.h"; sourceTree = "<group>"; };
+		75AD08F820C176050063AE30 /* GMapStyle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GMapStyle.json; sourceTree = "<group>"; };
 		AB5D94A720C1653C003A6A3F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		AB5D94A920C16749003A6A3F /* ClusterItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClusterItem.swift; sourceTree = "<group>"; };
 		C1E94181F375DB0DA229ECE1 /* Pods-ClusterExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClusterExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClusterExample/Pods-ClusterExample.debug.xcconfig"; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 				75AD089220C159530063AE30 /* Info.plist */,
 				75AD088A20C159520063AE30 /* ClusterExample.xcdatamodeld */,
 				AB5D94A920C16749003A6A3F /* ClusterItem.swift */,
+				75AD08F820C176050063AE30 /* GMapStyle.json */,
 			);
 			path = ClusterExample;
 			sourceTree = "<group>";
@@ -374,6 +377,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75AD08F920C176060063AE30 /* GMapStyle.json in Resources */,
 				75AD089120C159530063AE30 /* LaunchScreen.storyboard in Resources */,
 				75AD088E20C159530063AE30 /* Assets.xcassets in Resources */,
 				75AD088920C159520063AE30 /* Main.storyboard in Resources */,
@@ -607,6 +611,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Test.ClusterExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ClusterExample/ClusterExample-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -625,6 +630,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Test.ClusterExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ClusterExample/ClusterExample-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
