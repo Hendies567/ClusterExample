@@ -22,6 +22,7 @@ class ViewController: UIViewController {
     }
     
     func setUpMap() {
+        gmap.setStyle()
         gmap.settings.setAllGesturesEnabled(false)
         var bounds = GMSCoordinateBounds()
         let iconGenerator = GMUDefaultClusterIconGenerator()
