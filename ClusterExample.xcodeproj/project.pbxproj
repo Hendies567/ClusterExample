@@ -38,6 +38,8 @@
 		75AD08F420C15B230063AE30 /* GMUGeoJSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AD08D520C15B230063AE30 /* GMUGeoJSONParser.m */; };
 		75AD08F520C15B230063AE30 /* GQTPointQuadTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AD08D820C15B230063AE30 /* GQTPointQuadTree.m */; };
 		75AD08F620C15B230063AE30 /* GQTPointQuadTreeChild.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AD08DA20C15B230063AE30 /* GQTPointQuadTreeChild.m */; };
+		AB5D94A820C1653C003A6A3F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5D94A720C1653C003A6A3F /* Constants.swift */; };
+		AB5D94AA20C16749003A6A3F /* ClusterItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5D94A920C16749003A6A3F /* ClusterItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -113,6 +115,8 @@
 		75AD08DD20C15B230063AE30 /* GQTPointQuadTreeChild.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GQTPointQuadTreeChild.h; sourceTree = "<group>"; };
 		75AD08DE20C15B230063AE30 /* GQTBounds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GQTBounds.h; sourceTree = "<group>"; };
 		75AD08F720C15B6B0063AE30 /* ClusterExample-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ClusterExample-Bridging-Header.h"; path = "ClusterExample/ClusterExample-Bridging-Header.h"; sourceTree = "<group>"; };
+		AB5D94A720C1653C003A6A3F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		AB5D94A920C16749003A6A3F /* ClusterItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClusterItem.swift; sourceTree = "<group>"; };
 		C1E94181F375DB0DA229ECE1 /* Pods-ClusterExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClusterExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClusterExample/Pods-ClusterExample.debug.xcconfig"; sourceTree = "<group>"; };
 		C90631C981474F49F22A12C3 /* Pods-ClusterExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClusterExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClusterExample/Pods-ClusterExample.release.xcconfig"; sourceTree = "<group>"; };
 		FA3BAA8822A7C34D2A0C74C4 /* Pods_ClusterExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClusterExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -161,12 +165,14 @@
 			isa = PBXGroup;
 			children = (
 				75AD088320C159520063AE30 /* AppDelegate.swift */,
+				AB5D94A720C1653C003A6A3F /* Constants.swift */,
 				75AD088520C159520063AE30 /* ViewController.swift */,
 				75AD088720C159520063AE30 /* Main.storyboard */,
 				75AD088D20C159530063AE30 /* Assets.xcassets */,
 				75AD088F20C159530063AE30 /* LaunchScreen.storyboard */,
 				75AD089220C159530063AE30 /* Info.plist */,
 				75AD088A20C159520063AE30 /* ClusterExample.xcdatamodeld */,
+				AB5D94A920C16749003A6A3F /* ClusterItem.swift */,
 			);
 			path = ClusterExample;
 			sourceTree = "<group>";
@@ -423,6 +429,7 @@
 				75AD08EF20C15B230063AE30 /* GMUFeature.m in Sources */,
 				75AD08F220C15B230063AE30 /* GMUPoint.m in Sources */,
 				75AD08F620C15B230063AE30 /* GQTPointQuadTreeChild.m in Sources */,
+				AB5D94AA20C16749003A6A3F /* ClusterItem.swift in Sources */,
 				75AD08F520C15B230063AE30 /* GQTPointQuadTree.m in Sources */,
 				75AD08F320C15B230063AE30 /* GMULineString.m in Sources */,
 				75AD08E220C15B230063AE30 /* GMUSimpleClusterAlgorithm.m in Sources */,
@@ -431,6 +438,7 @@
 				75AD08DF20C15B230063AE30 /* GMUClusterManager.m in Sources */,
 				75AD08E820C15B230063AE30 /* GMUGradient.m in Sources */,
 				75AD088620C159520063AE30 /* ViewController.swift in Sources */,
+				AB5D94A820C1653C003A6A3F /* Constants.swift in Sources */,
 				75AD08F420C15B230063AE30 /* GMUGeoJSONParser.m in Sources */,
 				75AD08ED20C15B230063AE30 /* GMUPlacemark.m in Sources */,
 				75AD08E420C15B230063AE30 /* GMUDefaultClusterRenderer.m in Sources */,
@@ -593,7 +601,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ClusterExample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Test.ClusterExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -608,7 +619,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ClusterExample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Test.ClusterExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
