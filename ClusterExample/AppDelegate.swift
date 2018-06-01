@@ -18,8 +18,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        gmap = GMSMapView()
         GMSServices.provideAPIKey("AIzaSyDWtnNC80BUw5_FHNHqVigFZQMhiVAITVM")
+        gmap = GMSMapView()
+        gmap.frame = CGRect(x: 0, y: 0, width: 350, height: 300)
+        gmap.setStyle()
+        gmap.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         return true
     }
 

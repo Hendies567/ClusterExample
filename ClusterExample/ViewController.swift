@@ -72,27 +72,27 @@ class ViewController: UIViewController {
         clusterManager.add(airport)
         self.clusterItems.append(airport)
         
-        let atrraction1 =
+        let attraction1 =
             ClusterItem(position: CLLocationCoordinate2DMake(31.6277, -8.0234), name: "1", type: "Attraction", imgString: "")
         clusterManager.add(attraction1)
         self.clusterItems.append(attraction1)
         
-        let atrraction2 =
+        let attraction2 =
             ClusterItem(position: CLLocationCoordinate2DMake(31.605, -8.024), name: "2", type: "Attraction", imgString: "")
         clusterManager.add(attraction2)
         self.clusterItems.append(attraction2)
         
-        let atrraction3 =
+        let attraction3 =
             ClusterItem(position: CLLocationCoordinate2DMake(31.61, -8.024), name: "3", type: "Attraction", imgString: "")
         clusterManager.add(attraction3)
         self.clusterItems.append(attraction3)
         
-        let atrraction4 =
+        let attraction4 =
             ClusterItem(position: CLLocationCoordinate2DMake(31.65, -8.020), name: "4", type: "Attraction", imgString: "")
         clusterManager.add(attraction4)
         self.clusterItems.append(attraction4)
         
-        let atrraction5 =
+        let attraction5 =
             ClusterItem(position: CLLocationCoordinate2DMake(31.64, -8.027), name: "5", type: "Attraction", imgString: "")
         clusterManager.add(attraction5)
         self.clusterItems.append(attraction5)
